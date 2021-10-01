@@ -1395,15 +1395,18 @@ void draw()
 void init()
 {
     glutInitDisplayMode(GLUT_RGB | GLUT_DOUBLE);
-    glClearColor(1,1,1,0);
+    //glClearColor(1,1,1,0);
+     glClearColor(1,2,1,1);
     glMatrixMode(GL_PROJECTION);
     glLoadIdentity();
 }
 int main(int nidhi,char *gombe[])
 {
     glutInit(&nidhi,gombe);
-    glutInitWindowPosition(200,1);
-    glutInitWindowSize(800,800);
+    //glutInitWindowPosition(200,1);
+     glutInitWindowPosition(400,2);
+    //glutInitWindowSize(800,800);
+    glutInitWindowSize(900,900);
     glutCreateWindow("kite");
     glutKeyboardFunc(keyboard);
     glutDisplayFunc(draw);
